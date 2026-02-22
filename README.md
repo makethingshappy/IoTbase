@@ -23,7 +23,7 @@ The series currently includes three versatile professional-grade carrier boards:
 ### Expansion & Interconnectivity
 
 - **IoTextra** Mezzanine Slots: Integrated HOST-P12 and HOST-S12 connectors for 47x56mm IoTextra modules.
-- **mikroBUS™** Support: M1 Connector and Two slots for Click-boards (M2 and M3, are accessible when no mezzanine is installed).
+- **mikroBUS™** Support: M1 Connector and Two slots for Click-boards (M2 and M3 are accessible when no mezzanine is installed).
 - Dual **Qwiic** Connectors: Two I2C ports for rapid sensor integration with switchable pull-up resistors.
 
 ### Communication & Data
@@ -75,12 +75,12 @@ The full SKU list is available in the repository root:
 ---
 
 ### 🛒 Purchase Links  
-Order IoTsmart modules directly from the official store:
+Order IoTbase modules directly from the official store:
 
 - **IoTbase PICO:**  
   https://makethingshappy.io/collections/iotbase/products/iotbase-pico
 
-- **IoTbase NANO**  
+- **IoTbase NANO:**  
   https://makethingshappy.io/collections/iotbase/products/iotbase-nano
 
 ---
@@ -93,3 +93,7 @@ This repository uses separate licenses per asset type:
 - **Schematics & Documentation:** [`LICENSE_HARDWARE.md`](./LICENSE_HARDWARE.md) — CC BY-SA 4.0  
 - **Documentation:** [`LICENSE_DOCS.md`](./LICENSE_DOCS.md)  
 - **Media:** [`LICENSE_MEDIA.md`](./LICENSE_MEDIA.md)
+
+---
+
+**Developed by MTH LLC** | [makethingshappy.io](http://www.makethingshappy.io)

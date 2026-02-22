@@ -4,7 +4,7 @@ The **IoTbase** series by **makethingshappy** provides a robust hardware foundat
 
 ## Supported Modules
 
-The series currently includes three versatile base boards:
+The series currently includes three versatile professional-grade carrier boards:
 
 - **IoTbase PICO**: Optimized for the Raspberry Pi Pico / Pico 2 and compatible modules (e.g., Waveshare ESP32-S3-PICO).
 - **IoTbase Nano**: Designed for the Arduino Nano form factor, supporting classic Nano, Nano Every, Waveshare ESP32-S3-Nano, and STM32 NUCLEO-L412KB.
@@ -25,8 +25,6 @@ The series currently includes three versatile base boards:
 - **IoTextra** Mezzanine Slots: Integrated HOST-P12 and HOST-S12 connectors for 47x56mm IoTextra modules.
 - **mikroBUS™** Support: M1 Connector and Two slots for Click-boards (M2 and M3, are accessible when no mezzanine is installed).
 - Dual **Qwiic** Connectors: Two I2C ports for rapid sensor integration with switchable pull-up resistors.
-
----
 
 ### Communication & Data
 

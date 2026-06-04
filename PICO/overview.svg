@@ -1,0 +1,10 @@
+<svg width="100%" viewBox="0 0 680 120" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>IoTbase PICO overview</title>
+<desc>IoTbase PICO — carrier board for Raspberry Pi PICO form-factor modules</desc>
+<rect x="0" y="0" width="680" height="120" rx="10" fill="none" stroke="#e0e0de" stroke-width="0.5"/>
+<rect x="0" y="0" width="6" height="120" rx="3" fill="#8f0000"/>
+<text x="30" y="38" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="18" font-weight="500" fill="#111111">IoTbase PICO</text>
+<text x="30" y="60" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" fill="#444444">Carrier board for Raspberry Pi PICO form-factor modules · IoTextra mezzanine · mikroBUS™ · EYESPI (LCD)</text>
+<text x="30" y="80" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" fill="#444444">Power: 9–36 VDC or USB · RS485 · 1-Wire · Qwiic · GPIO and I²C · Open Hardware</text>
+<text x="30" y="100" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" fill="#888888">Part of the IoTbase series · compatible with IoTextra and IoTsmart modules · Make Things Happy!</text>
+</svg>

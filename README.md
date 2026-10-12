@@ -39,10 +39,12 @@ IoTbase boards serve as the carrier for the **IoTextra** mezzanine series (47x56
 - **IoTextra Input**: 8-channel isolated digital inputs (up to 36V).
 - **IoTextra Relay2**: 4-channel SPDT relay module.
 - **IoTextra SSR Small**: 8-channel solid-state relay module.
+- **IoTextra MOSFET2**: 8-channel isolated N-channel MOSFET switch module.
 - **IoTextra Octal2**: 4 isolated inputs + 4 high-power NPN outputs.
 - **IoTextra Octal3**: 4 isolated digital inputs + 4 latching DPDT relays.
-- **IoTextra Octal4**: 4 isolated digital inputs + 2 NPN outputs + 2 SPST relays.
+- **IoTextra Octal4**: 4 isolated digital inputs + 4 SPST relays.
 - **IoTextra Analog**: 4-channel 16-bit ADC (ADS1115) for 4-20mA/voltage signals.
+- **IoTextra Analog3**: 8-channel differential 12-bit ADC (ADS7828) for 0-5V and 0-20mA/4-20mA signals.
 - **IoTextra Combo**: 2 relays + 2 precision analog inputs.
 Coming Soon — IoTextra Octal: A hybrid module featuring 4 isolated digital inputs and 4 relays.
 

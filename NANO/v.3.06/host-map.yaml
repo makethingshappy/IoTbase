@@ -1,0 +1,84 @@
+kind: carrier
+product: IoTbase NANO
+revision: "3.06"
+# HOST AP0-AP7 / I2C -> MCU pin of the plug-in board
+# Source: IoTbase NANO 3.06 schematic (HOST net -> Nano header pin)
+#       + vendor schematic of each board (header pin -> GPIO / port pin)
+# Socket: AP0=D6 AP1=D7 AP2=D8 AP3=D9 AP4=A3 AP5=A2 AP6=A1 AP7=D2 SDA=A4 SCL=A5
+# Solder bridges: AP2 via SB14, AP3 via SB12, AP4 via SB15, AP5 via SB13, AP6 via SB11, AP7 via SB16
+boards:
+  nano-33-iot:
+    vendor: Arduino
+    model: Nano 33 IoT
+    mcu: ATSAMD21G18A
+    # SAMD21: port pins, not a single GPIO number
+    host:
+      AP0: PA04
+      AP1: PA06
+      AP2: PA18
+      AP3: PA20
+      AP4: PA10
+      AP5: PA11
+      AP6: PB02
+      AP7: PB10
+      I2C:
+        bus: 0        # Arduino Wire (SERCOM4)
+        SDA: PB08
+        SCL: PB09
+  nano-rp2040-connect:
+    vendor: Arduino
+    model: Nano RP2040 Connect
+    mcu: RP2040
+    host:
+      AP0: 18
+      AP1: 19
+      AP2: 20
+      AP3: 21
+      AP4: 29
+      AP5: 28
+      AP6: 27
+      AP7: 25
+      I2C:
+        bus: 0        # fixed by pins: GPIO12/GPIO13 = I2C0
+        SDA: 12
+        SCL: 13
+  nano-esp32:
+    vendor: Arduino
+    model: Nano ESP32
+    mcu: ESP32-S3
+    host: &nano_s3
+      AP0: 9
+      AP1: 10
+      AP2: 17
+      AP3: 18
+      AP4: 4
+      AP5: 3          # strapping pin
+      AP6: 2
+      AP7: 5
+      I2C:
+        bus: 0        # convention: ESP32 routes I2C via GPIO matrix
+        SDA: 11
+        SCL: 12
+  esp32-s3-nano:
+    vendor: Waveshare
+    model: ESP32-S3-Nano
+    mcu: ESP32-S3
+    host: *nano_s3
+  nano-r4:
+    vendor: Arduino
+    model: Nano R4 (ABX00142)
+    mcu: RA4M1
+    # RA4M1: port pins, not a single GPIO number
+    host:
+      AP0: P106
+      AP1: P107
+      AP2: P304
+      AP3: P303
+      AP4: P002
+      AP5: P001
+      AP6: P000
+      AP7: P105
+      I2C:
+        bus: 0        # Arduino Wire (A4/A5)
+        SDA: P101
+        SCL: P100

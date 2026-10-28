@@ -1,0 +1,40 @@
+kind: carrier
+product: IoTbase PICO
+revision: "3.05"
+# HOST AP0-AP7 / I2C -> MCU pin of the plug-in board
+# Source: IoTbase PICO 3.05 schematic (HOST net -> Pico header pin)
+#       + vendor schematic / datasheet of each board (header pin -> GPIO)
+# Socket: AP0=14 AP1=15 AP2=16 AP3=17 AP4=19 AP5=20 AP6=24 AP7=25 SDA=26 SCL=27 (Pico pin numbers)
+boards:
+  pico:
+    vendor: Raspberry Pi
+    model: Pico / Pico W
+    mcu: RP2040
+    host: &rp_host
+      AP0: 10
+      AP1: 11
+      AP2: 12
+      AP3: 13
+      AP4: 14
+      AP5: 15
+      AP6: 18
+      AP7: 19
+      I2C:
+        bus: 0        # fixed by pins: GP20/GP21 = I2C0
+        SDA: 20
+        SCL: 21
+  pico2:
+    vendor: Raspberry Pi
+    model: Pico 2 / Pico 2 W
+    mcu: RP2350A
+    host: *rp_host
+  rp2350-plus:
+    vendor: Waveshare
+    model: RP2350-Plus
+    mcu: RP2350A
+    host: *rp_host
+  rp2350b-plus-w:
+    vendor: Waveshare
+    model: RP2350B-Plus-W
+    mcu: RP2350B
+    host: *rp_host
